@@ -1,7 +1,8 @@
-<%= @band.name %>
 
-<ul>
+
+<ul class="list-inline">
+	<li><h3><%= @band.name %></h3></li>
 	<% @band.musicians.each do |musician| %> 
-		<li><%= musician.name %></li>
+		<li><h3><small><%= musician.name %></small></h3></li>
 	<% end %>
 </ul>

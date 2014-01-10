@@ -1,0 +1,14 @@
+<form action="<%=band_memberships_path%>" method="post">
+	
+	<select name="musician_id" id="">
+		<% @musicians.each do |musician| %> 
+			<option value="<%=musician.id%>"><%= musician.name %></option>
+		<% end %>
+	</select>
+	<select name="band_id" id="">
+		<% @bands.each do |band| %> 
+			<option value="<%=band.id%>"><%= band.name %></option>
+		<% end %>
+	</select>
+	<button id="submit">Submit Band Membership</button>
+</form>

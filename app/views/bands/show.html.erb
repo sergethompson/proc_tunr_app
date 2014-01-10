@@ -3,6 +3,6 @@
 <ul class="list-inline">
 	<li><h3><%= @band.name %></h3></li>
 	<% @band.musicians.each do |musician| %> 
-		<li><h3><small><%= musician.name %></small></h3></li>
+		<li><h3><small><a href=""><%= musician.name %></a></small></h3></li>
 	<% end %>
 </ul>

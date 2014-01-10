@@ -1,5 +1,10 @@
 <% @musicians.each do |musician| %>
+<table class="table table-striped table-hover">
+	<td><%= musician.name %></td>
+	<td>Edit</td>
+	<td>Show</td>
+	<td>Delete</td>
 
-	<h1><%= musician.name %></h1>
 
+</table>
 	<% end %>

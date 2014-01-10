@@ -15,6 +15,16 @@ describe MusiciansController  do
 		 	current_path.should == musicians_path
 		 	page.should have_content(@name)
 		 end
+		 describe "show a page" do 
+		 	before do
+		 		@kurt = Musician.create name: "Kurt Cobain"
+		 		visit musician_path(@kurt)
+		 		end
+		 			it "has a musician on the page" do
+		 				page.should have_content(@kurt.name)
+
+		 			end
+		 end
 		end
 	end
 end
